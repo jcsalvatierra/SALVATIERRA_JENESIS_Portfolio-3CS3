@@ -26,6 +26,15 @@ Tips:
   open Google Drive, Facebook or the landing page.
 
 
+TWO VERSIONS OF THIS PORTFOLIO
+------------------------------
+index.html        - the creative "desktop" version (folders and dock).
+traditional.html  - the classic website version (menu bar at the
+                    top, scrolling sections, project cards).
+Both have the same content, instructions window, and themes.
+In the classic version, scroll down or click the menu at the top.
+
+
 2. HOW TO MOVE AROUND
 ---------------------
 When the website opens, a short "How to use this portfolio"
