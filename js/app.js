@@ -144,5 +144,7 @@ const closeG=()=>{if(gd.hidden||gd.classList.contains('out'))return;gd.classList
 gb.onclick=()=>{gb.hidden=true;gd.hidden=false;gx.focus()};
 gx.onclick=closeG;gd.onclick=e=>{if(e.target===gd)closeG()};
 addEventListener('keydown',e=>{if(e.key==='Escape'){closeG();const pop=$('#dpop');if(pop&&!pop.hidden){pop.hidden=true;$('.dock').classList.remove('pop')}}});
-gx.focus();
+$('#viewsw').addEventListener('click',()=>{try{localStorage.setItem('tradTheme',html.dataset.theme);sessionStorage.setItem('sw','1')}catch(e){}});
+let sw;try{sw=sessionStorage.getItem('sw');sessionStorage.removeItem('sw')}catch(e){}
+if(sw){gd.hidden=true;gb.hidden=false}else gx.focus();
 })();

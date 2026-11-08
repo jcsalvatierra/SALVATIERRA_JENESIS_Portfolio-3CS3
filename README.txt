@@ -32,6 +32,8 @@ index.html        - the creative "desktop" version (folders and dock).
 traditional.html  - the classic website version (menu bar at the
                     top, scrolling sections, project cards).
 Both have the same content, instructions window, and themes.
+To switch, click the tab on the right edge of the screen
+("Classic view" or "Desktop view"). Your chosen theme carries over.
 In the classic version, scroll down or click the menu at the top.
 
 

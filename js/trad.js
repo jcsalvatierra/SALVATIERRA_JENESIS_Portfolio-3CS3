@@ -86,6 +86,9 @@ addEventListener('keydown',e=>{
  if(e.key==='Escape'){closeTm();if(!gd.hidden)closeG();else if(!fv.hidden)closeF();else if(!pv.hidden)location.hash='#projects'}
  else if(!pv.hidden&&fv.hidden&&gd.hidden){if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)}});
 /* ---------- start ---------- */
-body.classList.add('lock');$('#gx').focus();
+$('#viewsw').addEventListener('click',()=>{try{localStorage.setItem('theme',html.dataset.theme);sessionStorage.setItem('sw','1')}catch(e){}});
+$$('.swl').forEach(a=>a.addEventListener('click',()=>{try{localStorage.setItem('theme',html.dataset.theme);sessionStorage.setItem('sw','1')}catch(e){}}));
+let sw;try{sw=sessionStorage.getItem('sw');sessionStorage.removeItem('sw')}catch(e){}
+if(sw){gd.hidden=true;gb.hidden=false}else{body.classList.add('lock');$('#gx').focus()}
 route();
 })();
